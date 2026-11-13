@@ -1,0 +1,27 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/__pycache__": true
+  },
+  "search.exclude": {
+    "**/build_clion": true,
+    "**/build_clion_release": true,
+    "**/lib": true,
+    "**/extern": true,
+    "**/locale": true
+  },
+  "files.watcherExclude": {
+    "**/build_clion/**": true,
+    "**/build_clion_release/**": true,
+    "**/lib/**": true
+  },
+  "C_Cpp.intelliSenseCacheSize": 8192,
+  "C_Cpp.intelliSenseEngine": "default",
+  "C_Cpp.errorSquiggles": "enabled",
+  "cmake.configureOnOpen": false,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "files.associations": {
+    "*.hh": "cpp",
+    "*.cc": "cpp"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "version": 4,
+  "configurations": [
+    {
+      "name": "Blender (Debug)",
+      "compileCommands": "${workspaceFolder}/build_clion/compile_commands.json",
+      "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe",
+      "cStandard": "c17",
+      "cppStandard": "c++20",
+      "intelliSenseMode": "windows-msvc-x64",
+      "includePath": ["${workspaceFolder}/**"],
+      "defines": ["_WIN32", "WIN32", "_CRT_SECURE_NO_WARNINGS"],
+      "browse": {
+        "path": ["${workspaceFolder}/source", "${workspaceFolder}/intern", "${workspaceFolder}/extern"],
+        "limitSymbolsToIncludedHeaders": true
+      }
+    },
+    {
+      "name": "Blender (Release)",
+      "compileCommands": "${workspaceFolder}/build_clion_release/compile_commands.json",
+      "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe",
+      "cStandard": "c17",
+      "cppStandard": "c++20",
+      "intelliSenseMode": "windows-msvc-x64",
+      "includePath": ["${workspaceFolder}/**"],
+      "defines": ["_WIN32", "WIN32", "_CRT_SECURE_NO_WARNINGS"],
+      "browse": {
+        "path": ["${workspaceFolder}/source", "${workspaceFolder}/intern", "${workspaceFolder}/extern"],
+        "limitSymbolsToIncludedHeaders": true
+      }
+    }
+  ]
+}

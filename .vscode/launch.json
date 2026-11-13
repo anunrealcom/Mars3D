@@ -1,0 +1,47 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Blender (Debug) - 启动",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build_clion/bin/blender.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}/build_clion/bin",
+      "stopAtEntry": false,
+      "console": "integratedTerminal",
+      "symbolSearchPath": "${workspaceFolder}/build_clion/bin;${workspaceFolder}/build_clion/source/creator/Debug",
+      "environment": [
+        {
+          "name": "PATH",
+          "value": "${workspaceFolder}\\lib\\windows_x64\\python\\313\\bin;${workspaceFolder}\\lib\\windows_x64\\tbb\\bin;${env:PATH}"
+        }
+      ],
+      "preLaunchTask": "Blender: 构建并安装 (Debug)"
+    },
+    {
+      "name": "Blender (Release) - 启动",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build_clion_release/bin/blender.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}/build_clion_release/bin",
+      "stopAtEntry": false,
+      "console": "integratedTerminal",
+      "symbolSearchPath": "${workspaceFolder}/build_clion_release/bin;${workspaceFolder}/build_clion_release/source/creator/Release",
+      "environment": [
+        {
+          "name": "PATH",
+          "value": "${workspaceFolder}\\lib\\windows_x64\\python\\313\\bin;${workspaceFolder}\\lib\\windows_x64\\tbb\\bin;${env:PATH}"
+        }
+      ],
+      "preLaunchTask": "Blender: 构建并安装 (Release)"
+    },
+    {
+      "name": "Blender (Debug) - 附加到运行中的进程",
+      "type": "cppvsdbg",
+      "request": "attach",
+      "processId": "${command:pickProcess}"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 21,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "clion-msvc-debug",
+      "displayName": "CLion MSVC Debug (lite)",
+      "description": "Self-contained MSVC/Ninja debug build for CLion. No VS Developer Prompt needed: INCLUDE/LIB/PATH are baked in. Heavy optional modules are disabled to cut first-build time.",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build_clion",
+      "environment": {
+        "INCLUDE": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/include;C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/ucrt;C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/um;C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/shared;C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/winrt",
+        "LIB": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/lib/x64;C:/Program Files (x86)/Windows Kits/10/Lib/10.0.26100.0/ucrt/x64;C:/Program Files (x86)/Windows Kits/10/Lib/10.0.26100.0/um/x64",
+        "PATH": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64;C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64;D:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64;$penv{PATH}",
+        "CC": "cl",
+        "CXX": "cl"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_C_COMPILER": "cl",
+        "CMAKE_CXX_COMPILER": "cl",
+        "CMAKE_MAKE_PROGRAM": "D:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe",
+        "WITH_ASSERT_ABORT": "ON",
+        "WITH_CYCLES_OSL": "OFF",
+        "WITH_CYCLES_DEVICE_OPTIX": "OFF",
+        "WITH_CYCLES_DEVICE_CUDA": "OFF",
+        "WITH_CYCLES_DEVICE_HIP": "OFF",
+        "WITH_CYCLES_DEVICE_ONEAPI": "OFF",
+        "WITH_CYCLES_PATH_GUIDING": "OFF",
+        "WITH_HYDRA": "OFF",
+        "WITH_USD": "OFF",
+        "WITH_MATERIALX": "OFF",
+        "WITH_FREESTYLE": "OFF",
+        "WITH_GTESTS": "OFF",
+        "WITH_UI_TESTS": "OFF",
+        "WITH_GPU_RENDER_TESTS": "OFF",
+        "WITH_GPU_RENDER_TESTS_VULKAN": "OFF",
+        "WITH_GPU_BACKEND_TESTS": "OFF",
+        "WITH_GPU_DRAW_TESTS": "OFF",
+        "WITH_GPU_COMPOSITOR_TESTS": "OFF",
+        "WITH_GPU_MESH_PAINT_TESTS": "OFF",
+        "WITH_TESTS_EXPERIMENTAL": "OFF"
+      }
+    },
+    {
+      "name": "clion-msvc-release",
+      "displayName": "CLion MSVC Release (lite)",
+      "description": "Faster to build and much faster at runtime; still has PDB symbols for breakpoints. Recommended for day-to-day development.",
+      "inherits": "clion-msvc-debug",
+      "binaryDir": "${sourceDir}/build_clion_release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "build-debug",
+      "configurePreset": "clion-msvc-debug",
+      "targets": ["install"],
+      "jobs": 12,
+      "environment": {
+        "INCLUDE": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/include;C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/ucrt;C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/um;C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/shared;C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/winrt",
+        "LIB": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/lib/x64;C:/Program Files (x86)/Windows Kits/10/Lib/10.0.26100.0/ucrt/x64;C:/Program Files (x86)/Windows Kits/10/Lib/10.0.26100.0/um/x64",
+        "PATH": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64;C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64;D:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64;$penv{PATH}"
+      }
+    },
+    {
+      "name": "build-release",
+      "configurePreset": "clion-msvc-release",
+      "targets": ["install"],
+      "jobs": 12,
+      "environment": {
+        "INCLUDE": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/include;C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/ucrt;C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/um;C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/shared;C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/winrt",
+        "LIB": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/lib/x64;C:/Program Files (x86)/Windows Kits/10/Lib/10.0.26100.0/ucrt/x64;C:/Program Files (x86)/Windows Kits/10/Lib/10.0.26100.0/um/x64",
+        "PATH": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64;C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64;D:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64;$penv{PATH}"
+      }
+    }
+  ]
+}
