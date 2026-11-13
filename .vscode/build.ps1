@@ -113,7 +113,7 @@ function Import-MsvcEnvironment {
 function Test-BlenderRuntime {
     param([string]$Path)
     $required = @(
-        'bin\blender.exe',
+        'bin\mars3d.exe',
         'bin\blender.crt\blender.crt.manifest',
         'bin\blender.shared\blender.shared.manifest',
         'bin\5.3\datafiles\colormanagement\config.ocio',
@@ -223,7 +223,7 @@ if ($buildExit -ne 0) {
 $stopwatch.Stop()
 Write-Host ("Build finished in {0:N1} min." -f $stopwatch.Elapsed.TotalMinutes) -ForegroundColor Green
 
-$exePath = Join-Path $buildPath 'bin\blender.exe'
+$exePath = Join-Path $buildPath 'bin\mars3d.exe'
 if (Test-Path -LiteralPath $exePath) {
     Write-Host "Executable: $exePath" -ForegroundColor Green
 }

@@ -3479,7 +3479,7 @@ class WM_MT_splash(Menu):
             col2.operator("wm.url_open", text="Support", icon='URL').url = "https://www.blender.org/support/"
             col2.operator("wm.url_open", text="User Communities", icon='URL').url = "https://www.blender.org/community/"
             col2.operator("wm.url_open", text="Get Involved", icon='URL').url = "https://www.blender.org/get-involved/"
-            col2.operator("wm.url_open_preset", text="Blender Website", icon='URL').type = 'BLENDER'
+            col2.operator("wm.url_open", text="Mars3D Website", icon='URL').url = "https://github.com/anunrealcom/Mars3D"
 
         col_sep = layout.column()
         col_sep.separator()
@@ -3497,7 +3497,7 @@ class WM_MT_splash(Menu):
         col2 = split.column()
 
         col2.operator("wm.url_open_preset", text="What's New", icon='URL').type = 'RELEASE_NOTES'
-        col2.operator("wm.url_open_preset", text="Donate to Blender", icon='FUND').type = 'FUND'
+        col2.operator("wm.url_open_preset", text="Support Blender", icon='FUND').type = 'FUND'
 
         layout.separator()
 
@@ -3538,7 +3538,7 @@ class WM_MT_splash_about(Menu):
         del _ghost_backend, ghost_backend
 
         col.separator(factor=2.0)
-        col.label(text="Blender is free software")
+        col.label(text="Mars3D (火星3D) is free software, based on Blender")
         col.label(text="Licensed under the GNU General Public License")
 
         col = split.column(align=True)
@@ -3548,8 +3548,8 @@ class WM_MT_splash_about(Menu):
         col.separator(factor=2.0)
         col.operator("wm.url_open_preset", text="Credits", icon='URL').type = 'CREDITS'
         col.operator("wm.url_open", text="License", icon='URL').url = "https://www.blender.org/about/license/"
-        col.operator("wm.url_open", text="Blender Store", icon='URL').url = "https://store.blender.org"
-        col.operator("wm.url_open_preset", text="Blender Website", icon='URL').type = 'BLENDER'
+
+        col.operator("wm.url_open", text="Mars3D Website", icon='URL').url = "https://github.com/anunrealcom/Mars3D"
 
 
 class WM_MT_region_toggle_pie(Menu):

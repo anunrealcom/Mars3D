@@ -86,6 +86,9 @@ waveletNoiseTile.bin
 /lib/
 *_clone.log
 *_lfs.log
+
+# Rebrand working assets (AI master image, generator scripts).
+/.brand/
 CMakeSettings.json
 CMakePresets.json
 CMakeUserPresets.json

@@ -119,7 +119,7 @@ char **environ = nullptr;
 
 #include "creator_intern.h" /* Own include. */
 
-BLI_STATIC_ASSERT(ENDIAN_ORDER == L_ENDIAN, "Blender only builds on little endian systems")
+BLI_STATIC_ASSERT(ENDIAN_ORDER == L_ENDIAN, "Mars3D only builds on little endian systems")
 
 /* -------------------------------------------------------------------- */
 /** \name GMP Allocator Workaround
@@ -614,7 +614,7 @@ int main(int argc,
 #ifndef WITH_PYTHON
   fprintf(stderr,
           "\n"
-          "WARNING: Blender compiled without Python!\n"
+          "WARNING: Mars3D compiled without Python!\n"
           "This is not intended for typical usage.\n"
           "\n");
 #endif

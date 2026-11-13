@@ -4523,7 +4523,7 @@ static void rna_def_space_outliner(BlenderRNA *brna)
       {SO_LIBRARIES,
        "LIBRARIES",
        ICON_FILE_BLEND,
-       "Blender File",
+       "Mars3D File",
        "Display data of current file and linked libraries"},
       {SO_DATA_API,
        "DATA_API",

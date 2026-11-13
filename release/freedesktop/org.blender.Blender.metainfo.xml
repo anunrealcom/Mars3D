@@ -2,8 +2,8 @@
 <component type="desktop">
     <id>org.blender.Blender</id>
     <launchable type="desktop-id">blender.desktop</launchable>
-    <name>Blender</name>
-    <summary>Free and open source 3D creation suite</summary>
+    <name>Mars3D</name>
+    <summary>Free and open source 3D creation suite (Mars3D fork of Blender)</summary>
     <metadata_license>CC0-1.0</metadata_license>
     <project_license>GPL-3.0</project_license>
     <description>
@@ -21,7 +21,7 @@
             the list goes on.
         </p>
     </description>
-    <url type="homepage">https://www.blender.org</url>
+    <url type="homepage">https://github.com/anunrealcom/Mars3D</url>
     <url type="bugtracker">https://projects.blender.org/blender/blender/issues?q=&amp;labels=296</url>
     <url type="faq">https://www.blender.org/support/faq/</url>
     <url type="help">https://www.blender.org/support/</url>

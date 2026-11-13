@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Blender: 构建并安装 (Debug)",
+      "label": "Mars3D: 构建并安装 (Debug)",
       "detail": "增量编译 build_clion 并把 scripts/datafiles/python 安装到 bin/5.3（F5 默认使用）",
       "type": "shell",
       "command": "powershell",
@@ -36,7 +36,7 @@
       }
     },
     {
-      "label": "Blender: 仅编译 (Debug)",
+      "label": "Mars3D: 仅编译 (Debug)",
       "detail": "只编译 build_clion，不执行 install",
       "type": "shell",
       "command": "powershell",
@@ -65,7 +65,7 @@
       }
     },
     {
-      "label": "Blender: 构建并安装 (Release)",
+      "label": "Mars3D: 构建并安装 (Release)",
       "detail": "编译 build_clion_release（速度快，但断点调试信息有损）",
       "type": "shell",
       "command": "powershell",
@@ -96,7 +96,7 @@
       }
     },
     {
-      "label": "Blender: 强制重新安装运行文件 (Debug)",
+      "label": "Mars3D: 强制重新安装运行文件 (Debug)",
       "detail": "重新执行 ninja install，把 scripts/datafiles/python 重新拷到 bin/5.3",
       "type": "shell",
       "command": "powershell",
@@ -127,7 +127,7 @@
       }
     },
     {
-      "label": "Blender: 重新配置 CMake (Debug)",
+      "label": "Mars3D: 重新配置 CMake (Debug)",
       "detail": "重新生成 build_clion 的构建文件与 compile_commands.json",
       "type": "shell",
       "command": "powershell",

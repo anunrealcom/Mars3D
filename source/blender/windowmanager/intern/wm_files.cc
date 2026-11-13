@@ -2573,7 +2573,7 @@ static wmOperatorStatus wm_homefile_write_invoke(bContext *C,
     return WM_operator_confirm_ex(C,
                                   op,
                                   IFACE_("Overwrite Startup File"),
-                                  IFACE_("Blender will start next time as it is now."),
+                                  IFACE_("Mars3D will start next time as it is now."),
                                   IFACE_("Overwrite"),
                                   ui::AlertIcon::Question,
                                   false);

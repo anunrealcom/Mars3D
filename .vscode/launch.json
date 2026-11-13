@@ -5,7 +5,7 @@
       "name": "Blender (Debug) - 启动",
       "type": "cppvsdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build_clion/bin/blender.exe",
+      "program": "${workspaceFolder}/build_clion/bin/mars3d.exe",
       "args": [],
       "cwd": "${workspaceFolder}/build_clion/bin",
       "stopAtEntry": false,
@@ -17,13 +17,13 @@
           "value": "${workspaceFolder}\\lib\\windows_x64\\python\\313\\bin;${workspaceFolder}\\lib\\windows_x64\\tbb\\bin;${env:PATH}"
         }
       ],
-      "preLaunchTask": "Blender: 构建并安装 (Debug)"
+      "preLaunchTask": "Mars3D: 构建并安装 (Debug)"
     },
     {
       "name": "Blender (Release) - 启动",
       "type": "cppvsdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build_clion_release/bin/blender.exe",
+      "program": "${workspaceFolder}/build_clion_release/bin/mars3d.exe",
       "args": [],
       "cwd": "${workspaceFolder}/build_clion_release/bin",
       "stopAtEntry": false,
@@ -35,7 +35,7 @@
           "value": "${workspaceFolder}\\lib\\windows_x64\\python\\313\\bin;${workspaceFolder}\\lib\\windows_x64\\tbb\\bin;${env:PATH}"
         }
       ],
-      "preLaunchTask": "Blender: 构建并安装 (Release)"
+      "preLaunchTask": "Mars3D: 构建并安装 (Release)"
     },
     {
       "name": "Blender (Debug) - 附加到运行中的进程",
